@@ -33,12 +33,14 @@
     <!-- Added aria-labelledby to associate the form with a screen reader-friendly heading -->
     <form aria-labelledby="feedbackFormHeading">
         <!-- Update 1: Added aria-label for screen reader accessibility -->
+         <fieldset>
+          <legend> Fill out the form</legend>
         <div class="control">
           <label for="name">Full name <span class="required">*</span></label>
           <input id="name" name="name" type="text" aria-required="true" aria-describedby="name_description" />
           <span id="name_description" class="sr-only">This is a required field.</span>
         </div>
-
+        </fieldset>
         <!-- Update 2: Added aria-describedby for inline instruction to be announced by screen readers -->
         <div class="control">
           <label for="biography">Biography</label>
